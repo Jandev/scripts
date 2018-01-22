@@ -10,14 +10,14 @@ choco install firefox -y
 refreshenv
 choco install googlechrome -y 
 refreshenv
-choco install itunes -y 
-refreshenv
+#choco install itunes -y 
+#refreshenv
 #choco install icloud -y #Should done later when Outlook is properly configured
 refreshenv
-choco install crashplan -y 
-refreshenv
+#choco install crashplan -y 
+#refreshenv
 choco install slack  -y 
-choco install inputdirector -y 
+#choco install inputdirector -y 
 #choco install paint.net -y  #Does not have checksums, discarded.
 choco install sublimetext3  -y 
 choco install vlc  -y 
@@ -31,7 +31,7 @@ refreshenv
 
 #Development software IDE
 choco install visualstudiocode -y 
-choco install visualstudio2015enterprise -y 
+#choco install visualstudio2015enterprise -y 
 
 #Development software tooling
 choco install beyondcompare -y 
@@ -51,12 +51,13 @@ refreshenv
 choco install nodejs.install -y
 refreshenv
 choco install zoomit -y
-#choco install python2  -y
+choco install python2  -y
 refreshenv
-choco install python  -y
-refreshenv
-choco install gitkraken -y
-refreshenv
-choco install filezilla -y
-choco install openlivewriter -y
-choco install teamviewer -y
+#choco install python  -y
+#refreshenv
+#choco install gitkraken -y
+#refreshenv
+#choco install filezilla -y
+#choco install openlivewriter -y
+#choco install teamviewer -y
+#choco install mousewithoutborders -y

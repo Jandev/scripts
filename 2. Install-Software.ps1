@@ -3,6 +3,9 @@
 #Update Chocolatey
 choco upgrade chocolatey
 
+choco install boxstarter -y
+refreshenv
+choco install sudo -y
 #Normal software
 choco install keepass -y 
 choco install 7zip.install -y 
@@ -22,28 +25,27 @@ choco install adobereader -y
 refreshenv
 choco install gpmdp -y
 refreshenv
-choco install snagit -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
+choco install snagit --version=2019.1.2 -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
 refreshenv
 choco install darktable -y
 choco install zoom -y
 choco install obs-studio -y
 choco install office365business -y
 refreshenv
+choco install franz -y
 
 #Development software IDE
-choco install visualstudio2019enterprise -y --package-parameters "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended;includeOptional --addMicrosoft.VisualStudio.Workload.Node;includeRecommended;includeOptional"
+choco install visualstudio2019enterprise -y --package-parameters "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.Node;includeRecommended;includeOptional"
+refreshenv
 choco install visualstudiocode -y 
 choco install sublimetext3 -y
+choco install linqpad -y
 
 #Development software tooling
 choco install beyondcompare -y 
 choco install fiddler -y 
 refreshenv
-#choco install resharper-platform -y #Gaat beter via de reguliere installer
-refreshenv
 choco install git -y  --params "/GitAndUnixToolsOnPath /NoGitLfs /SChannel /NoAutoCrlf /WindowsTerminal /NoGuiHereIntegration /NoShellHereIntegration"
-refreshenv
-#choco install github  -y #Has wrong checksum
 refreshenv
 choco install gitextensions  -y 
 refreshenv
@@ -52,3 +54,6 @@ refreshenv
 choco install zoomit -y
 choco install python  -y
 refreshenv
+choco install git-fork -y
+
+Install-BoxstarterPackage https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/devops_azure.ps1

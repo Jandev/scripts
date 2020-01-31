@@ -1,0 +1,3 @@
+[submodule "windows-dev-box-setup-scripts"]
+	path = windows-dev-box-setup-scripts
+	url = https://github.com/microsoft/windows-dev-box-setup-scripts.git

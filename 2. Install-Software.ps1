@@ -26,6 +26,7 @@ refreshenv
 choco install gpmdp -y
 refreshenv
 choco install snagit --version=2019.1.2 -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
+choco install camtasia -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
 refreshenv
 choco install darktable -y
 choco install zoom -y
@@ -33,6 +34,7 @@ choco install obs-studio -y
 choco install office365business -y
 refreshenv
 choco install franz -y
+choco install skype -y
 
 #Development software IDE
 choco install visualstudio2019enterprise -y --package-parameters "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.Node;includeRecommended;includeOptional"

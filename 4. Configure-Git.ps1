@@ -1,4 +1,4 @@
-git config --global core.excludesfile D:\OneDrive\Development\global.gitignore
+git config --global core.excludesfile D:\OneDrive\Software\Devtools\Development\global.gitignore
 
 # Copy bash stuff
 Copy-Item "D:\OneDrive\Software\Devtools\Development\.bash_profile" -Destination "C:\Users\jan\.bash_profile"

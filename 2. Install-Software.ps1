@@ -42,6 +42,7 @@ refreshenv
 choco install visualstudiocode -y 
 choco install sublimetext3 -y
 choco install linqpad -y
+choco install jetbrainstoolbox -y
 
 #Development software tooling
 choco install beyondcompare -y 

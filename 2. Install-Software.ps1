@@ -40,7 +40,6 @@ choco install skype -y
 choco install visualstudio2019enterprise -y --package-parameters "--add Microsoft.VisualStudio.Workload.Azure;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.NetWeb;includeRecommended;includeOptional --add Microsoft.VisualStudio.Workload.Node;includeRecommended;includeOptional"
 refreshenv
 choco install visualstudiocode -y 
-choco install sublimetext3 -y
 choco install linqpad -y
 choco install jetbrainstoolbox -y
 
@@ -58,5 +57,9 @@ choco install zoomit -y
 choco install python  -y
 refreshenv
 choco install git-fork -y
+choco install servicebusexplorer -y
+
+choco install archi -y
+choco install gimp -y
 
 Install-BoxstarterPackage https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/devops_azure.ps1

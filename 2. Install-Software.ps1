@@ -60,6 +60,9 @@ choco install git-fork -y
 choco install servicebusexplorer -y
 
 choco install archi -y
-choco install gimp -y
+# choco install gimp -y
+
+choco install eartrumpet -y
+choco install powertoys -y
 
 Install-BoxstarterPackage https://raw.githubusercontent.com/Microsoft/windows-dev-box-setup-scripts/master/devops_azure.ps1

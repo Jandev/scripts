@@ -23,7 +23,7 @@ choco install adobereader -y
 refreshenv
 choco install gpmdp -y
 refreshenv
-choco install snagit --version=2019.1.2 -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
+choco install snagit -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
 choco install camtasia -y --params "/licensekey:ABCD-EFGH-IJKL /licensename:""Joe Bloggs"" /nodesktopshortcut"
 refreshenv
 #choco install darktable -y

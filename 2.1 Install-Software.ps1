@@ -14,6 +14,6 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 wsl --set-default-version 2
 Write-Host "Download new kernel from: https://aka.ms/wsl2kernel"
 
-Write-Host "When running with the built-in Administrator, make sure to enable `UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account`"
+Write-Host "When running with the built-in Administrator, make sure to enable `UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account` "
 Write-Host "https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account"
 Write-Host "Edit group policy -> Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options"

@@ -31,7 +31,7 @@ choco install zoom -y
 choco install obs-studio -y
 choco install office365business -y
 refreshenv
-choco install franz -y
+choco install rambox -y
 choco install skype -y
 
 #Development software IDE

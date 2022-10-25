@@ -8,3 +8,6 @@ ntp3.aliyun.com
 ntp4.aliyun.com
 ws.meethue.com
 www.ecdinterface.philips.com
+*.baidu.com
+dcp.dc1.philips.com
+fds.dc1.philips.com

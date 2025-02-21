@@ -1,0 +1,1 @@
+copy "%localappdata%\Programs\Microsoft VS Code Insiders\bin\code-insiders.cmd" "%localappdata%\Programs\Microsoft VS Code Insiders\bin\codi2.cmd"

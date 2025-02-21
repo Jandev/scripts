@@ -4,9 +4,10 @@ Invoke-Expression (new-object net.webclient).downloadstring('https://get.scoop.s
 
 winget install DominikReichl.KeePass
 winget install SublimeHQ.SublimeText.3
-winget install Microsoft.VisualStudioCode
-winget install Microsoft.VisualStudio.2022.Enterprise
-winget install JetBrains.Toolbox
+winget install Microsoft.VisualStudioCode --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
+winget install Microsoft.VisualStudioCode.Insiders --override '/SILENT /mergetasks="!runcode,addcontextmenufiles,addcontextmenufolders"'
+# winget install Microsoft.VisualStudio.2022.Enterprise
+# winget install JetBrains.Toolbox
 winget install ScooterSoftware.BeyondCompare4
 winget install Telerik.Fiddler.Classic
 winget install Git.Git
@@ -17,7 +18,7 @@ winget install Microsoft.AzureCLI
 winget install JanDeDobbeleer.OhMyPosh
 winget install Microsoft.PowerAppsCLI
 winget install Microsoft.Office
-winget install Microsoft.SQLServerManagementStudio
+# winget install Microsoft.SQLServerManagementStudio
 winget install File-New-Project.EarTrumpet
 winget install --source winget --silent 7zip
 winget install --source msstore --silent --accept-package-agreements "Adobe Acrobat Reader DC"
@@ -25,25 +26,38 @@ winget install --source msstore --silent --accept-package-agreements "Dynamics A
 winget install --source msstore --silent --accept-package-agreements "9MTTCL66CPXJ" # Ubuntu 20.04.4 LTS
 
 winget install --source winget --silent "Microsoft PowerBI Desktop"
-winget install --source winget --silent "Microsoft.AzureDataStudio"
+# winget install --source winget --silent "Microsoft.AzureDataStudio"
 winget install --source winget --silent "Microsoft.AzureStorageExplorer"
-winget install --source msstore --silent --accept-package-agreements "Cosmos DB Studio"
-winget install --source winget --silent "Microsoft.azure-iot-explorer"
-winget install --source winget --silent "Postman.Postman"
+# winget install --source msstore --silent --accept-package-agreements "Cosmos DB Studio"
+# winget install --source winget --silent "Microsoft.azure-iot-explorer"
+# winget install --source winget --silent "Postman.Postman"
+winget install --source winget --silent  Insomnia.Insomnia
 winget install --source winget --silent "Microsoft.AzureStorageEmulator"
 winget install --source winget --silent "Microsoft.AzureFunctionsCoreTools"
 winget install --source winget --silent "Microsoft.AzureCosmosEmulator"
 winget install --id "Microsoft.dotnet" --version
 winget install --id "Microsoft.dotnet" --version 3.1.410.15736
-winget install --source winget --silent "Microsoft.OpenJDK.16"
-winget install --source winget --silent "GoLang.Go"
+# winget install --source winget --silent "Microsoft.OpenJDK.16"
+# winget install --source winget --silent "GoLang.Go"
 winget install --source winget --silent "Python 3.9"
 winget install --source winget --silent "OpenJS.NodeJS"
-winget install TechSmith.Snagit --version 21.4.4.12541
+winget install TechSmith.Snagit.2021
 winget install OBSProject.OBSStudio
 winget install VideoLAN.VLC
 winget install XP89DCGQ3K6VLD --silent # Power Toys
 winget install LINQPad.LINQPad.6
+winget install CodeSector.TeraCopy
+winget install 44576milosp.OneCommander_p0rg76fmnrgsm
+# winget install Discord.Discord
+winget install Docker.DockerDesktop
+winget install {0DE05B8E-6889-4616-8428-850274AB0700} # Davinci Resolve
+winget install {397D0864-05AE-4528-92A5-465F043D9F1D} # Affinity Photo
+winget install Elgato.StreamDeck
+winget install microsoft.azd
+winget install MusicBee.MusicBee
+winget install FilesCommunity.FilesPreview
+winget install FilesCommunity.Files
+winget install Plex.Plexamp
 
 scoop bucket add extras
 scoop install curl grep sed less touch --global
@@ -55,7 +69,7 @@ scoop install azure-cli --global
 $azcliext = Get-Content "$originalExecPath\az-cli.extensions"
 $azcliext | ForEach-Object { az extension add --name $_ }
 scoop install bicep --global
-scoop install aws --global
+# scoop install aws --global
 PreparePowerShell
 Install-Module -Name Az -AllowClobber -Force
 Install-Module -Name AzureAD -Force -SkipPublisherCheck
@@ -64,8 +78,8 @@ scoop install nuget --global
 scoop install kubectl --global
 scoop install helm --global
 scoop install draft --global
-scoop install cloudfoundry-cli@7.1.0 --global
-scoop install openshift-origin-client --global
+# scoop install cloudfoundry-cli@7.1.0 --global
+# scoop install openshift-origin-client --global
 scoop install hugo
 
 Enable-WindowsOptionalFeature -FeatureName Microsoft-Hyper-V-All -Online -NoRestart

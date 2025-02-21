@@ -2,25 +2,26 @@ git config --global core.excludesfile C:\Users\jandevries\OneDrive\Software\Devt
 
 git config --global core.fsmonitor true
 
+$oneDrivePath = "D:\OneDrive\"
 # Copy bash stuff
-Copy-Item "C:\Users\jandevries\OneDrive\Software\Devtools\Development\.bash_profile" -Destination "C:\Users\jandevries\.bash_profile"
-Copy-Item "C:\Users\jandevries\OneDrive\Software\Devtools\Development\.bashrc" -Destination "C:\Users\jandevries\.bashrc"
+Copy-Item "$($oneDrivePath)Software\Devtools\Development\.bash_profile" -Destination "C:\Users\jandevries\.bash_profile"
+Copy-Item "$($oneDrivePath)Software\Devtools\Development\.bashrc" -Destination "C:\Users\jandevries\.bashrc"
 
-# Copy SSH stuff
-New-Item -Path "C:\Users\jandevries\" -Name ".ssh" -ItemType "directory"
-Copy-Item "C:\Users\jandevries\OneDrive\Software\Devtools\Keys\jan" -Destination "C:\Users\jandevries\.ssh\jan"
-Copy-Item "C:\Users\jandevries\OneDrive\Software\Devtools\Keys\config" -Destination "C:\Users\jandevries\.ssh\config"
+# # Copy SSH stuff
+# New-Item -Path "C:\Users\jandevries\" -Name ".ssh" -ItemType "directory"
+# Copy-Item "$($oneDrivePath)Software\Devtools\Keys\jan" -Destination "C:\Users\jandevries\.ssh\jan"
+# Copy-Item "$($oneDrivePath)Software\Devtools\Keys\config" -Destination "C:\Users\jandevries\.ssh\config"
 
-# Check status of service
-Get-Service ssh-agent
+# # Check status of service
+# Get-Service ssh-agent
 
-# Check the start type of the service
-Get-Service ssh-agent | Select StartType
+# # Check the start type of the service
+# Get-Service ssh-agent | Select StartType
 
-# Set the start type to manual
-Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+# # Set the start type to manual
+# Get-Service -Name ssh-agent | Set-Service -StartupType Manual
 
-# Start the service
-Start-Service ssh-agent
+# # Start the service
+# Start-Service ssh-agent
 
-ssh-add $env:USERPROFILE\.ssh\jan
+# ssh-add $env:USERPROFILE\.ssh\jan

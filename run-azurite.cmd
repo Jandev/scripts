@@ -1,0 +1,1 @@
+powershell D:\OneDrive\Software\Scripts\run-azurite.ps1
